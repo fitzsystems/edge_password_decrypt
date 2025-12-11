@@ -13,7 +13,7 @@ This Python script decrypts passwords stored in Microsoft Edge's database. Users
 
 ```shell
 # Install Dependencies
-pip install -r requirements.txt
+pip install pycryptodomex inquirer pandas pywin32 cryptography
 
 # Run the script
 py edge.py
