@@ -4,6 +4,8 @@
 
 # Copyright (C) 2022, SOME-1HING [https://github.com/SOME-1HING]
 
+# Modified by fitzsystems [https://github.com/fitzsystems] on Dec 2025
+
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
@@ -154,6 +156,7 @@ For details, visit https://www.gnu.org/licenses/'.
             sys.exit(1)
 
     def get_win_user_accounts(self) -> list[dict]:
+        # Modified by fitzsystems on Dec 2025
         cmd = 'Get-LocalUser | Select-Object Name,FullName,Disabled'
 
         users = subprocess.run(
