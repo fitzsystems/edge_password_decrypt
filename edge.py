@@ -154,7 +154,7 @@ For details, visit https://www.gnu.org/licenses/'.
             sys.exit(1)
 
     def get_win_user_accounts(self) -> list[dict]:
-        cmd = 'Get-WmiObject Win32_UserAccount -filter "LocalAccount=True" | Select-Object Name,FullName,Disabled'
+        cmd = 'Get-LocalUser | Select-Object Name,FullName,Disabled'
 
         users = subprocess.run(
             ["powershell", "-Command", cmd], capture_output=True
